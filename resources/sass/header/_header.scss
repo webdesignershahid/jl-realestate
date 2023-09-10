@@ -1,0 +1,70 @@
+header {
+    background: var(--color-white);
+    box-shadow: 0px 4px 4px #E5E5E5;
+
+    .header-top {
+        background-color: var( --color-theme-alt);
+        padding: 0.8rem 0;
+        a {
+            font-size: 0.9rem;
+            color: var(--color-white);
+            font-family: var(--font-secondary);
+        }
+    
+        .social-media {
+            a {
+                padding: 0 4px;
+                &:hover {
+                    
+                    i[class*=facebook] {
+                        color: #3b5998;
+                    }
+                    i[class*=twitter] {
+                        color: #1da1f2;
+                    }
+                    i[class*=linkedin] {
+                        color: #3b5998;
+                    }
+                    i[class*=pinterest] {
+                        color: 	#E60023;
+                    }
+                    i[class*=envelope] {
+                        color: #ea4335;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .header-bottom {
+        padding: 1.3rem 0;
+    }
+
+    .site-navbar {
+
+        li {
+            display: inline-block;
+            a {
+                font-weight: 600;
+                font-size: 0.8rem;
+                line-height: 20px;
+                padding: 0 14px;
+
+                &:hover {
+                    color: var(--color-theme);
+                }
+            }
+
+            .btn {
+                background-color: var(--color-theme);
+                padding: 1rem 1.3rem;
+                color: var(--color-white);
+
+                &:hover {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.about-info {
+    padding: 90px 0;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    p.semi-bold {
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+
+    .info-img {
+
+        @media (min-width:992px) {    
+            width: 130%;   
+            position: relative;     
+        }
+    }
+
+}
+
+
+.persons {
+    padding: 90px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        top: 0;
+        background-color: #0077B5;
+        z-index: -1;
+    }
+
+    .section-centered-title {
+        max-width: 730px;
+        h1, p {
+            color: var(--color-white);
+        }
+        p {
+            margin-top: 1rem;
+            font-weight: 300;
+        }
+    }
+    .team-member-item {
+        margin-top: 30px;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .overlay {
+            position: absolute;
+            top: 0%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(153, 153, 101, 0.9), rgba(153, 153, 101, 0.9));
+            padding: 30px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+
+            p {
+                font-size: 15px;
+                line-height: 1.5;
+                color: var(--color-white);
+            }
+
+            .social-media {
+                margin-top: 1rem ;
+                text-align: center;
+                a+a {
+                    margin-left: 5px;
+                }
+                i {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    line-height: 40px;
+                    font-size: 16px;
+                    text-align: center;
+                    color: var(--color-white);
+                    margin-top: 8px;
+                }
+                i[class*=facebook] {
+                    background-color: #3b5998;
+                }
+                i[class*=twitter] {
+                    background-color: #1da1f2;
+                }
+                i[class*=youtube] {
+                    background-color: #CD201F;
+                }
+                i[class*=instagram] {
+                    background-color: #262626;
+                }
+                i[class*=skype] {
+                    background-color: #00AFF0;
+                }
+            }
+        }
+
+        .team-info-box {
+            background-color: var(--color-white);
+            padding: 20px;
+            border: 1px solid #E5E5E5;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+
+            h4 {
+                font-weight: 700;
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: normal;
+            }
+
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.video-tour {
+    margin-bottom: 90px;
+
+    .popup-video {
+        position: relative;
+        display: block;
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            border: none;
+            font-size: 4rem;
+            color: var(--color-white);
+        }
+    }
+}
+
+.cta-agent {
+    padding: 90px 0;
+    position: relative;
+    z-index: 1;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 119, 181, 0.8);
+        z-index: -1;
+    }
+
+    h1 {
+        font-weight: 800;
+        color: var(--color-white);
+        font-size: 2.5rem;
+    }
+
+    p {
+        color: var(--color-white);
+        line-height: 2;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+
+    a {
+        background-color: var(--color-white);
+        padding: 16px 30px;
+        color: var(--color-black);
+        display: inline-block;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+
+}

@@ -1,0 +1,141 @@
+.contact-wrapper {
+    padding: 90px 0;
+
+    .contact-form {
+        background-color: var(--color-white);
+        padding: 40px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 22px;
+        }
+        p {
+            margin: 1rem 0;
+            font-weight: normal;
+        }
+        
+        span.text-danger {
+            font-size: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.3rem;
+        }
+        label {
+            font-weight: normal;
+            position: relative;
+
+            span.text-danger {
+                position: absolute;
+                top: 3px;
+                font-size: 2rem;
+            }
+
+        }
+
+        .gdpr-agreement {
+            margin-bottom: 1rem;
+
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                margin-top: 1.2rem;
+            }
+            label {
+                padding-left: 30px;
+                position: relative;
+                cursor: pointer;
+                input {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    left: 0;
+                    top: 9px;
+                }
+                p {
+                    line-height: 1.5;
+                    user-select: none;
+                    margin: 8px 0;
+                }
+
+            }
+        }
+
+        .submit {
+            button {
+                background-color: var(--color-theme);
+                padding: 1rem;
+                text-align: center;
+                font-weight: 500;
+                color: var(--color-white);
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .contact-sidebar {
+
+        .sidebar-widget {
+            margin-bottom: 30px;
+            padding: 30px;
+            background-color: var(--color-white);
+
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            li {
+                margin-top: 20px;
+            }
+            h4 {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+
+        .contact-social-media {
+            li {
+                i {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 5px;
+                    line-height: 50px;
+                    font-size: 24px;
+                    text-align: center;
+                    color: var(--color-white);
+                    margin-top: 8px;
+                }
+                i[class*=facebook] {
+                    background-color: #3b5998;
+                }
+                i[class*=twitter] {
+                    background-color: #1da1f2;
+                }
+                i[class*=linkedin] {
+                    background-color: #3b5998;
+                }
+                i[class*=youtube] {
+                    background-color: #CD201F;
+                }
+                i[class*=instagram] {
+                    background-color: #262626;
+                }
+                i[class*=skype] {
+                    background-color: #00AFF0;
+                }
+            }
+        }
+    }
+}
+
+.google-map {
+    background-color: var(--color-white);
+
+    .address {
+        padding-top: 1rem;
+    }
+}

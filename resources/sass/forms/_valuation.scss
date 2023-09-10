@@ -1,0 +1,47 @@
+.valuation-wrapper {
+    padding: 90px 0;
+
+
+    .form-wrapper {
+        padding: 40px;
+
+        h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-top: 1.5rem;
+            padding-bottom: .5rem;
+        }
+
+        form {
+            margin-top: 1.5rem;
+
+            .form-group {
+                margin-bottom: 1.5rem;
+
+                label {
+                    font-weight: 500;
+                }
+            }
+
+            .submit {
+                button {
+                    padding: .6rem 1rem;
+                    min-width: 160px;
+                    border: 1px solid #eee;
+                    margin-right: 1rem;
+
+                    &[type=submit] {
+                        background-color: var(--color-theme);
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+    }
+}
